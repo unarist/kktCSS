@@ -129,6 +129,7 @@ body /* user */,
 .column-header,
 .column-header__button,
 .column-header__button.active,
+.column-header__back-button,
 .column-back-button,
 .column-link {
   background: #d0e093;
@@ -431,7 +432,7 @@ p, /* Katswoots -- Posts, Tweets, Katsus, TOOTS, take your pick. */
 .column-header__button,
 .column-link,
 .column-back-button,
-.column-back-button span,
+.column-header__back-button,
 .compose-form__warning span {
   color: #6a4643;
 }
