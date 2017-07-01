@@ -227,7 +227,8 @@ body /* user */,
 .onboarding-modal__pager,
 .confirmation-modal,
 .boost-modal,
-.boost-modal__container .status {
+.boost-modal__container .status,
+.report-modal {
   background: linear-gradient(to bottom, rgba(252, 252, 225, 1) 0%, rgba(252, 252, 225, 1) 65%, rgba(252, 252, 225, 1) 65%, rgba(249, 240, 174, 1) 100%);
   border-radius: 8px;
   border: solid 2px #e1c152;
@@ -254,7 +255,8 @@ body /* user */,
 
 .onboarding-modal,
 .boost-modal__action-bar,
-.confirmation-modal__action-bar {
+.confirmation-modal__action-bar,
+.report-modal__action-bar {
   background: none;
 }
 
@@ -939,10 +941,6 @@ div.drawer__inner div:not(.navigation-bar) div:last-child div:last-child div:nth
 
 /* User Report */
 
-.scrollable.report {
-  background: rgba(212, 220, 171, 0.5); /* transparentize(mix(#ecf5be, black, 90%), 0.5) */
-}
-
 .status-check-box .status__content {
   background: rgba(255, 255, 255, 0.7);
 }
@@ -1070,10 +1068,11 @@ div.drawer__inner div:not(.navigation-bar) div:last-child div:last-child div:nth
   color: #ed649c !important;
 }
 
-/* Confirmation Modals */
+/* Modals */
 
 .boost-modal__action-bar,
-.confirmation-modal__action-bar {
+.confirmation-modal__action-bar,
+.report-modal__action-bar {
   padding-top: 0px;
 }
 
