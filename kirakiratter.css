@@ -127,7 +127,8 @@ body /* user */,
 }
 
 .column-header,
-.column-icon,
+.column-header__button,
+.column-header__button.active,
 .column-back-button,
 .column-link {
   background: #d0e093;
@@ -367,6 +368,7 @@ body /* user */,
 /* COLOUR STYLING */
 /* Brown */
 p, /* Katswoots -- Posts, Tweets, Katsus, TOOTS, take your pick. */
+.column-header__setting-btn,
 .status__content,
 .status-card__description,
 .column-subheading, /* Getting Started */
@@ -421,12 +423,12 @@ p, /* Katswoots -- Posts, Tweets, Katsus, TOOTS, take your pick. */
 .icon-button.active:hover,
 .drawer__tab:hover,
 .icon-button:hover,
-.column-icon:hover,
 .column-header:hover,
+.column-header__button:hover,
 .column-link:hover,
 .drawer__tab,
-.column-icon,
 .column-header,
+.column-header__button,
 .column-link,
 .column-back-button,
 .column-back-button span,
@@ -539,8 +541,10 @@ a span, /* Toots */
 .activity-stream .media-spoiler:hover,
 .nothing-here,
 .footer,
+.column-header__setting-btn,
+.column-header__setting-btn:hover,
 .column-settings__section,
-.setting-toggle,
+.setting-toggle__label,
 .boost-modal__action-bar>div, /* Modals */
 .confirmation-modal__action-bar>div,
 .status.light .display-name span,
@@ -736,11 +740,12 @@ button.icon-button i.fa-retweet:hover {
 }
 
 .tabs-bar__link.active,
-.column-settings--outer,
-.column-settings__outer,
+.column-header__collapsible > div, /* 1.4.2 ... 1.4.5 */
+.column-header__collapsible-outer, /* 1.4.x */
 .account__action-bar,
 .column-link:hover,
-.collapsable:hover,
+.column-header__button:hover,
+.column-header__button.active:hover,
 .load-more:hover {
   background: rgba(255, 255, 255, 0.7);
 }
@@ -750,7 +755,7 @@ button.icon-button i.fa-retweet:hover {
 }
 
 .column-header:focus,
-.column-icon:focus,
+.column-header__button:focus,
 .status__content__spoiler-link:focus,
 .column-back-button:focus {
   outline: none;
